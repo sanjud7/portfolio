@@ -1,0 +1,222 @@
+
+
+
+
+/* portfolio css*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000000bd;
+	font-family: Montserrat, sans-serif;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height: 100vh;
+	margin: 0;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+#div1{
+    display: block;
+}
+
+.card-container {
+	background-color: #0e2e4b77;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #fffefecb;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+    
+}
+
+.card-container .round {
+	border: 1px solid #00000098;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	background-color:rgba(12, 109, 44, 0.233);
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #dfdbd2;
+	font-family: Montserrat, sans-serif;
+	font-weight: 800;
+    font-size: small;
+	padding: 10px 25px;
+    margin: 2px;
+}
+button.primary:hover{
+    box-shadow: inset 300px 0 0 0 #0c4b7585;
+    cursor: pointer;
+    color: #fff;
+
+
+
+}
+button.primary a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+button.primary.ghost {
+	background-color: rgba(11, 146, 56, 0.233);
+	color: #dfdbd2;
+}
+
+.skills {
+	background-color: #101011b7;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+   
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    color: #fff;
+}
+
+.skills ul li {
+	border: 1px solid #e1dfe2ad;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+.skills ul li:hover {
+    box-shadow: inset 300px 0 0 0 rgba(16, 66, 114, 0.336);
+    color: #fff;
+}
+
+
+/*  Contact css   */
+
+#div2{
+  display: none;
+}
+
+
+.back{
+    
+    
+    color: #fff;
+    position: relative;
+    padding-right:0px;
+    top: -2px;
+}
+
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #0d0d0eb7;
+  padding: 25px;
+  border-radius: 5px;
+  border-radius: 10px;
+   
+}
+
+::placeholder {
+  color:    rgb(255, 255, 255);
+}
+.wrapper:hover{
+  transition: 1ms;
+  box-shadow: -4px -4px 4px 4px  rgba(10, 196, 103, 0.336);
+  
+
+}
+
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+  
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #06e0fda9;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 60px;
+  color: #fff;
+}
+
+.wrapper .btn button[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #ffffff;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.wrapper .btn button[type="submit"]:hover{
+
+  transition: 1ms;
+
+ box-shadow:  inset 300px 0 0 0 #0d8d826b;
+
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}

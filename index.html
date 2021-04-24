@@ -1,0 +1,88 @@
+<html>
+<head> <title> portfolio </title> 
+<link href="css/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body> 
+
+    <br>
+    <br>
+    <br>
+  
+<!--- portfolio -->
+
+
+    <div class="card-container" id="div1">
+
+       
+
+        
+        <img class="round" src="img/dp1.jpg" alt="user" />
+        <h3>Your Name</h3>
+        <h6>Your Place</h6>
+        <p>Software Engineer,<br/> front-end developer</p>
+        <div class="buttons">
+            <button class="primary" id="contact" onclick="flip()">
+                
+                Contact Me!
+            </button>
+            <button class="primary ghost" id="cv">
+            <a href="media/resume.pdf" class="btn btn-download" download> Download CV</a>
+               
+            </button>
+        </div>
+        <div class="skills">
+            <h6>Skills</h6>
+            <ul>
+                <li>Front End Development</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </div>
+    </div>
+
+
+<!----contact form -->
+
+<div class="wrapper" id="div2">
+
+   <a type="button" class="back" id="cv" onclick="flip()">  <i class="fa fa-chevron-left" style="font: size 4px"></i> back </a>
+  <h2>Contact Me</h2>
+  <div id="error_message">
+     
+  </div>
+  <form action="contact_form.php" method="POST"  id="myform"  name="contact" >
+    <div class="input_field">
+        <input type="text" placeholder="Name" id="name" name="name" required>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Subject" id="subject" name="subject" required>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Phone" id="phone" name="phone" required>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email" name="email" required>
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Message" id="message" name="message"></textarea>
+    </div>
+    <div class="btn">
+        <button type="submit" id="submit" onclick="msg()"> SEND MESSAGE </button>
+    </div>
+  </form>
+</div>
+        
+     
+<script src="js/custome.js"> </script>
+<script src="js/custom.js"> </script>
+</body>
+</html>
